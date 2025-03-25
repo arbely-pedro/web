@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioterapia Arbely Pedro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo-png.png" alt="Logo Fisioterapia Arbely Pedro" id="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="atencion.html">Atención</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="galeriaVideos">
+        <div class="contenedor">
+            <h2>Galería de Videos</h2>
+            <p>Conoce un poco mas nuestras instalaciones y los tratamientos que he aplicado a mis pacientes</p>
+            <div class="videos-container">
+                <!-- Video local 1 (silencio) -->
+                <div class="video-card">
+                    <video class="video-local" controls muted>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                    <div class="video-info">
+                        <h3>Instalaciones</h3>
+                        <p>Conoce las instalaciones</p>
+                    </div>
+                </div>
+    
+                <!-- Video local 2 (reproducción automática) -->
+                <div class="video-card">
+                    <video class="video-local" controls autoplay>
+                        <source src="videos/video2.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                    <div class="video-info">
+                        <h3>Rehabilitación</h3>
+                        <p>Post fractura radio</p>
+                    </div>
+                </div>
+    
+               
+                <div class="video-card">
+                    <video class="video-local" controls>
+                        <source src="videos/video3.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                    <div class="video-info">
+                        <h3>Un lugar de paz!</h3>
+                        <p>Ven a conocer nuestros servicios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <button id="irArriba" onclick="subirPagina()">&#8679;</button>
+    
+    <footer>
+        <p>&copy; 2025 Fisioterapia Arbely Pedro - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

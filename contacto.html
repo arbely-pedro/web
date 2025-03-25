@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioterapia Arbely Pedro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo-png.png" alt="Logo Fisioterapia Arbely Pedro" id="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="atencion.html">Atención</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="contacto" class="contacto">
+        <div class="contenedor">
+            <h2>Contacto</h2>
+    
+            <div class="informacion-contacto">
+                <h3>Datos de contacto</h3>
+                <p><strong>Teléfono:</strong> 999 297 1551</p>
+                <p><strong>Dirección:</strong> Calle 86 148 A por 29 y 31, Centro, Progreso, Yucatán</p>
+    
+                <div class="redes-sociales">
+                    <h3>Conéctate con nosotros</h3>
+                    <p><a href="https://www.instagram.com/fisioterapia_arbelyp" target="_blank">Instagram: @fisioterapia_arbelyp</a></p>
+                    <p><a href="https://www.facebook.com/profile.php?id=100078155327743" target="_blank">Facebook: Fisioterapia Arbely Pedro</a></p>
+                </div>
+            </div>
+    
+            <div class="ubicacion">
+                <h3>Ubicación</h3>
+                <div class="mapa-container">
+                    <iframe width="923" height="411" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=923&amp;height=411&amp;hl=en&amp;q=Fisioterapia%20Arbely%20Pedro%20Progreso+(Fisioterapia%20Arbely%20Pedro)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+    
+            <div class="formulario-contacto">
+                <h3>Formulario de contacto</h3>
+                <form id="contactForm" onsubmit="return enviarFormulario()">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn-enviar">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <button id="irArriba" onclick="subirPagina()">&#8679;</button>
+    
+    <footer>
+        <p>&copy; 2025 Fisioterapia Arbely Pedro - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

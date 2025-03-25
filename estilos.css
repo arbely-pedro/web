@@ -1,0 +1,940 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #eaf5e3; /* Fondo verde muy claro para armonizar */
+}
+
+header {
+    background-color: #dff0d8; /* Verde claro */
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 1;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    max-width: 360px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline-block; /* Necesario para que transform funcione */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #b8e0a7; /* Verde más intenso al pasar el cursor */
+    transform: scale(1.1); /* Efecto de crecimiento */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+}
+
+#irArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#irArriba:hover {
+    background-color: #0056b3;
+}
+
+#bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#bienvenida h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#bienvenida h2 span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+#bienvenida p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de botones alineados horizontalmente */
+.botones-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    align-items: center;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.boton:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.imagen-bienvenida {
+    max-width: 45%;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.boton.whatsapp {
+    background-color: #25d366;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center; /* Centra el icono dentro del botón */
+}
+
+.boton.whatsapp img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle; /* Alinear el icono con el texto */
+}
+
+.boton.whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+}
+
+
+
+/* Pagina Servicios */
+
+#servicios {
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#servicios .contenedor {
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#servicios p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Lista de servicios */
+.servicios-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.servicios-container li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.servicios-container li::before {
+    content: "•";
+    color: #007bff; /* Color de la lista */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Alineación de párrafos */
+.justificado {
+    text-align: justify;
+}
+
+.centrado {
+    text-align: center;
+}
+
+/* Imagen de la sección */
+.imagen-servicios {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Botón de regresar */
+#servicios .boton {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#servicios .boton:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para las tarjetas de servicios */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilo para las imágenes */
+.imagen-servicios {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/* Pagina Sobre mi */
+
+
+/* Estilos específicos para la sección Sobre Mi */
+.sobre-mi {
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sobre-mi .foto-perfil {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.sobre-mi .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-mi h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.sobre-mi p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sobre-mi .introduccion {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sobre-mi blockquote {
+    font-style: italic;
+    color: #444;
+    border-left: 4px solid #b8e0a7;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.sobre-mi .redes-sociales {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.sobre-mi .redes-sociales h3 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.sobre-mi .redes-sociales p {
+    color: #555;
+}
+
+.sobre-mi a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.sobre-mi a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Pagina Atencion */
+
+/* Estilos específicos para la sección Atención */
+.atencion {
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Tabla de Condiciones Tratadas */
+.tabla-condiciones {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabla-condiciones table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-condiciones th, .tabla-condiciones td {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.tabla-condiciones th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla-condiciones td {
+    background-color: #f9f9f9;
+}
+
+.tabla-condiciones tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Diseño para el contenido adicional */
+.pacientes {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.pacientes p {
+    margin-bottom: 15px;
+}
+
+.pacientes strong {
+    font-size: 1.3em;
+    color: #333;
+}
+
+
+/* Pagina Contacto */
+/* Estilos específicos para la sección Contacto */
+.contacto {
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Contenedor principal centrado */
+.contacto .contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilo para los datos de contacto */
+.contacto .informacion-contacto {
+    margin-bottom: 30px;
+    text-align: center; /* Centrado del texto */
+
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.contacto .informacion-contacto h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contacto .informacion-contacto p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contacto .redes-sociales a {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #4CAF50;
+}
+
+.contacto .redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la sección de ubicación (Google Maps) */
+.contacto .ubicacion {
+    margin: 30px 0;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto
+}
+
+.contacto .mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contacto .mapa-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilo para el formulario de contacto */
+.contacto .formulario-contacto {
+    text-align: left;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacto .formulario-contacto h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacto .form-group {
+    margin-bottom: 15px;
+}
+
+.contacto .form-group label {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contacto .form-group input, 
+.contacto .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contacto .form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contacto .btn-enviar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacto .btn-enviar:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilos para la sección horarios*/
+/* Estilos para la sección horarios*/
+/* Estilos específicos para la sección de horarios */
+#horarios {
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#horarios .contenedor {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Centrado de contenido en la sección */
+#horarios h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+#horarios p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor de la tabla */
+.tabla-contenedor {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Título de la tabla */
+#horarios h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para la tabla de horarios */
+.tabla-horarios {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.tabla-horarios td {
+    padding: 20px;
+    text-align: left;
+    font-size: 1.3em;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    vertical-align: middle;
+}
+
+.tabla-horarios td strong {
+    color: #4CAF50;
+}
+
+.tabla-horarios td i {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.tabla-horarios tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-horarios tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para mejorar la visualización de la tabla */
+.tabla-horarios td,
+.tabla-horarios th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-horarios th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.tabla-horarios tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para la nota */
+.nota {
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Botones de llamada a la acción */
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cta .boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cta .boton:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilos para la sección de galeria */
+
+/* Estilos para la sección de galería */
+.seccion-galeria {
+    padding: 40px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.seccion-galeria h2 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.seccion-galeria p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.foto {
+    width: 100%;
+    height: 600px; /* Establecemos una altura uniforme */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foto img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/* Estilos para la sección de reviews */
+.seccion-reviews {
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.seccion-reviews h2 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.reviews {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.foto-perfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.contenido-review h4 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contenido-review p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Estilo de hover para los reviews */
+.review:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Estilos para la sección de Videos*/
+/* Estilos generales */
+#galeriaVideos {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #f2f9f7, #e1f5e7);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#galeriaVideos h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#galeriaVideos p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de videos */
+.videos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Estilo de cada tarjeta de video */
+.video-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33% - 20px);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+}
+
+.video-card iframe,
+.video-card video {
+    width: 100%;
+    height: 600px;
+    border-bottom: 3px solid #333;
+}
+
+/* Información del video */
+.video-info {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+.video-info h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.video-info p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Estilo para dispositivos pequeños */
+@media (max-width: 768px) {
+    .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
