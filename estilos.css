@@ -50,10 +50,7 @@ nav ul li a {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-nav ul li a:hover {
-    background-color: #b8e0a7; /* Verde más intenso al pasar el cursor */
-    transform: scale(1.1); /* Efecto de crecimiento */
-}
+
 
 section {
     margin: 20px;
@@ -85,9 +82,7 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-#irArriba:hover {
-    background-color: #0056b3;
-}
+
 
 #bienvenida {
     display: flex;
@@ -144,10 +139,6 @@ footer {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.boton:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-}
 
 .imagen-bienvenida {
     max-width: 45%;
@@ -168,10 +159,6 @@ footer {
     vertical-align: middle; /* Alinear el icono con el texto */
 }
 
-.boton.whatsapp:hover {
-    background-color: #1ebe5d;
-    transform: scale(1.1);
-}
 
 
 
@@ -253,9 +240,6 @@ footer {
     transition: background-color 0.3s;
 }
 
-#servicios .boton:hover {
-    background-color: #0056b3;
-}
 
 
 /* Estilos para las tarjetas de servicios */
@@ -276,9 +260,7 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
+
 
 .card-img {
     width: 100%;
@@ -382,9 +364,7 @@ footer {
     text-decoration: none;
 }
 
-.sobre-mi a:hover {
-    text-decoration: underline;
-}
+
 
 
 
@@ -502,9 +482,7 @@ footer {
     color: #4CAF50;
 }
 
-.contacto .redes-sociales a:hover {
-    text-decoration: underline;
-}
+
 
 /* Estilo para la sección de ubicación (Google Maps) */
 .contacto .ubicacion {
@@ -582,9 +560,6 @@ footer {
     margin-right: auto;
 }
 
-.contacto .btn-enviar:hover {
-    background-color: #45a049;
-}
 
 
 /* Estilos para la sección horarios*/
@@ -675,9 +650,7 @@ footer {
     border-bottom: none;
 }
 
-.tabla-horarios tr:hover {
-    background-color: #f1f1f1;
-}
+
 
 /* Estilo para mejorar la visualización de la tabla */
 .tabla-horarios td,
@@ -729,9 +702,6 @@ footer {
     text-decoration: none;
 }
 
-.cta .boton:hover {
-    background-color: #45a049;
-}
 
 
 /* Estilos para la sección de galeria */
@@ -781,9 +751,7 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.foto img:hover {
-    transform: scale(1.05);
-}
+
 
 
 
@@ -837,10 +805,6 @@ footer {
     color: #777;
 }
 
-/* Estilo de hover para los reviews */
-.review:hover {
-    background-color: #f1f1f1;
-}
 
 
 /* Estilos para la sección de Videos*/
@@ -894,9 +858,7 @@ footer {
     text-align: left;
 }
 
-.video-card:hover {
-    transform: translateY(-10px);
-}
+
 
 .video-card iframe,
 .video-card video {
